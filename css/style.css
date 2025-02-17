@@ -372,8 +372,79 @@ footer {
 }
 
 
-@media(max-width:1200px){
-    .hero1{
-        width: 60%;
+/* For large tablets and laptops */
+@media (max-width: 1200px) {
+    .hero1 {
+      width: 60%;
     }
-}
+    .title {
+      font-size: 100px;
+    }
+    .subtitle, .hero h2 {
+      font-size: 1.8em;
+    }
+  }
+  
+  /* For tablets */
+  @media (max-width: 1024px) {
+    .hero1 {
+      width: 50%;
+      margin-left: -150px;
+    }
+    .title {
+      font-size: 80px;
+    }
+    .subtitle, .hero h2 {
+      font-size: 1.5em;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 800px) {
+    nav ul {
+      display: none;
+    }
+    nav h2 {
+      font-size: 1.5em;
+    }
+    .hero {
+      flex-direction: column;
+    }
+    .hero1 {
+      width: 80%;
+      text-align: center;
+      margin: 0;
+    }
+    .title {
+      font-size: 60px;
+    }
+    .subtitle, .hero h2 {
+      font-size: 1.2em;
+    }
+    .img1, .img2 {
+      display: none;
+    }
+  }
+  
+  /* For small mobile devices */
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+    }
+    nav h2 {
+      font-size: 1.2em;
+    }
+    .hero {
+      padding: 10px;
+    }
+    .title {
+      font-size: 40px;
+    }
+    .subtitle, .hero h2 {
+      font-size: 1em;
+    }
+    .hero button {
+      font-size: 1em;
+    }
+  }
+  
