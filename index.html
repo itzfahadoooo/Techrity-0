@@ -17,8 +17,12 @@
           <li><a href="#features">Features</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
+        <div id="menubtn">
+          <img src="./assets/menu.png" id="menu">
+      </div>
       </nav>
     </header>
+    
 
     <section class="hero" id="home">
       <div class="hero1">
@@ -91,7 +95,7 @@
     <h2 class="why">Get In Touch With CodeHub</h2>
     <footer>
        <div class="footer-right">
-    
+  
     <p>Federal University of Technology Minna,Niger State.<i class="fa-solid fa-location-dot"></i></p>
     <p>foyindolpao@gmail.com <i class="fa-solid fa-paper-plane"></i></p>
     <p>+2347086416510 <i class="fa-solid fa-phone"></i></p>
@@ -109,6 +113,27 @@
 </div>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js">
+      var menubtn = document.getElementById("menubtn")
+    var menubtn = document.getElementById("sidenav")
+    var menubtn = document.getElementById("menu")
+
+menubtn.onclick=function(){
+    if(sidenav.style.right == "-250px"){
+        sidenav.style.right="0";
+        menu.src="./assets/close.png"
+    }
+    else{
+        sidenav.style.right = "-250px";
+        menu.src="./assets/menu.png"
+    }
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+}
+); 
+    </script>
   </body>
 </html>
