@@ -31,3 +31,19 @@ navLinks.forEach(link => {
         targetSection.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+var menubtn = document.getElementById("menubtn")
+    var menubtn = document.getElementById("sidenav")
+    var menubtn = document.getElementById("menu")
+
+menubtn.onclick=function(){
+    if(sidenav.style.right == "-250px"){
+        sidenav.style.right="0";
+        menu.src="../assets/close.png"
+    }
+    else{
+        sidenav.style.right = "-250px";
+        menu.src="../assets/menu.png"
+    }
+}
+; 

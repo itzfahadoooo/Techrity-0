@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://kit.fontawesome.com/531148121f.js" crossorigin="anonymous"></script>
 
+
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="sidenav">
         <h2>CodeHub</h2>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -114,26 +115,7 @@
     </footer>
 
     <script src="./js/script.js">
-      var menubtn = document.getElementById("menubtn")
-    var menubtn = document.getElementById("sidenav")
-    var menubtn = document.getElementById("menu")
-
-menubtn.onclick=function(){
-    if(sidenav.style.right == "-250px"){
-        sidenav.style.right="0";
-        menu.src="./assets/close.png"
-    }
-    else{
-        sidenav.style.right = "-250px";
-        menu.src="./assets/menu.png"
-    }
-}
-
-var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 1000,
-	speedAsDuration: true
-}
-); 
+      
     </script>
   </body>
 </html>
